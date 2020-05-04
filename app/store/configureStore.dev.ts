@@ -5,7 +5,7 @@ import { routerMiddleware, routerActions } from 'connected-react-router';
 import { createLogger } from 'redux-logger';
 import createRootReducer from '../reducers';
 import * as counterActions from '../actions/counter';
-import { counterStateType } from '../reducers/types';
+import { counterStateType, StoreType } from '../reducers/types';
 
 declare global {
   interface Window {
@@ -25,7 +25,7 @@ const history = createHashHistory();
 
 const rootReducer = createRootReducer(history);
 
-const configureStore = (initialState?: counterStateType) => {
+const configureStore = (initialState?: counterStateType): StoreType => {
   // Redux Configuration
   const middleware = [];
   const enhancers = [];
@@ -78,7 +78,7 @@ const configureStore = (initialState?: counterStateType) => {
     );
   }
 
-  return store;
+  return { store, persistor: undefined };
 };
 
 export default { configureStore, history };
