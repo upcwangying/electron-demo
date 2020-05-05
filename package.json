@@ -53,7 +53,7 @@
   },
   "build": {
     "productName": "ElectronDemo",
-    "appId": "org.develar.ElectronDemo",
+    "appId": "com.upcwangying.apps.electron.demo",
     "files": [
       "dist/",
       "node_modules/",
@@ -96,7 +96,7 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "electron-demo",
+      "owner": "upcwangying",
       "repo": "electron-demo",
       "private": false
     }
@@ -106,22 +106,10 @@
     "url": "git+https://github.com/upcwangying/electron-demo.git"
   },
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-demo.js.org"
+    "name": "Ying Wang",
+    "email": "upcwangying@gmail.com",
+    "url": "https://github.com/upcwangying/electron-demo"
   },
-  "contributors": [
-    {
-      "name": "Vikram Rangaraj",
-      "email": "vikr01@icloud.com",
-      "url": "https://github.com/vikr01"
-    },
-    {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
-    }
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/upcwangying/electron-demo/issues"
