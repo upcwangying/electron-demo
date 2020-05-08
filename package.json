@@ -62,6 +62,16 @@
       "main.prod.js.map",
       "package.json"
     ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg",
+        "mas",
+        "mas-dev",
+        "pkg",
+        "zip"
+      ]
+    },
     "dmg": {
       "contents": [
         {
@@ -75,6 +85,9 @@
           "path": "/Applications"
         }
       ]
+    },
+    "mas": {
+      "binaries": ["/Users/ying/workspace/ElectronProjects/electron-demo/release/mac/ElectronDemo.app"]
     },
     "win": {
       "target": [
