@@ -1,7 +1,7 @@
 {
   "name": "electron-demo",
   "productName": "ElectronDemo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A demo for Electron",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -70,7 +70,11 @@
         "mas-dev",
         "pkg",
         "zip"
-      ]
+      ],
+      "icon": "resources/icon.icns",
+      "entitlements": "build/entitlements.mas.plist",
+      "entitlementsInherit": "build/entitlements.mas.inherit.plist",
+      "darkModeSupport": true
     },
     "dmg": {
       "contents": [
@@ -87,6 +91,8 @@
       ]
     },
     "mas": {
+      "entitlements": "build/entitlements.mas.plist",
+      "entitlementsInherit": "build/entitlements.mas.inherit.plist",
       "binaries": ["/Users/ying/workspace/ElectronProjects/electron-demo/release/mac/ElectronDemo.app"]
     },
     "win": {

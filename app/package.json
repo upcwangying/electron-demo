@@ -1,7 +1,7 @@
 {
   "name": "electron-demo",
   "productName": "electron-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A demo for Electron",
   "main": "./main.prod.js",
   "author": {
