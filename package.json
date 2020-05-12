@@ -54,8 +54,11 @@
   "build": {
     "productName": "ElectronDemo",
     "appId": "com.upcwangying.apps.electron.demo",
+    "copyright": "Copyright © 2020 Ying Wang",
     "files": [
       "dist/",
+      "build/",
+      "resources/",
       "node_modules/",
       "app.html",
       "main.prod.js",
@@ -72,8 +75,7 @@
         "zip"
       ],
       "icon": "resources/icon.icns",
-      "entitlements": "build/entitlements.mas.plist",
-      "entitlementsInherit": "build/entitlements.mas.inherit.plist",
+      "provisioningProfile": "build/electron-demo.provisionprofile",
       "darkModeSupport": true
     },
     "dmg": {
