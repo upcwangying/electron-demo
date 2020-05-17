@@ -1,4 +1,4 @@
-# electron-demo
+# see-desktop
 
 ## Install
 

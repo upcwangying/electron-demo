@@ -1,8 +1,8 @@
 {
-  "name": "electron-demo",
-  "productName": "ElectronDemo",
+  "name": "see",
+  "productName": "See",
   "version": "1.0.1",
-  "description": "A demo for Electron",
+  "description": "The desktop app for See",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -52,9 +52,9 @@
     ]
   },
   "build": {
-    "productName": "ElectronDemo",
-    "appId": "com.upcwangying.apps.electron.demo",
-    "copyright": "Copyright © 2020 Ying Wang",
+    "productName": "See",
+    "appId": "com.awesome-see.desktop",
+    "copyright": "Copyright © 2020 The See Authors",
     "files": [
       "dist/",
       "build/",
@@ -75,7 +75,7 @@
         "zip"
       ],
       "icon": "resources/icon.icns",
-      "provisioningProfile": "build/electron-demo.provisionprofile",
+      "provisioningProfile": "build/see.provisionprofile",
       "darkModeSupport": true
     },
     "dmg": {
@@ -95,7 +95,7 @@
     "mas": {
       "entitlements": "build/entitlements.mas.plist",
       "entitlementsInherit": "build/entitlements.mas.inherit.plist",
-      "binaries": ["/Users/ying/workspace/ElectronProjects/electron-demo/release/mac/ElectronDemo.app"]
+      "binaries": ["/Users/ying/workspace/ElectronProjects/see/release/mac/See.app"]
     },
     "win": {
       "target": [
@@ -117,27 +117,27 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "upcwangying",
-      "repo": "electron-demo",
+      "owner": "see",
+      "repo": "see-desktop",
       "private": false
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upcwangying/electron-demo.git"
+    "url": "git+https://github.com/see/see-desktop.git"
   },
   "author": {
     "name": "Ying Wang",
     "email": "upcwangying@gmail.com",
-    "url": "https://github.com/upcwangying/electron-demo"
+    "url": "https://github.com/see/see-desktop"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/upcwangying/electron-demo/issues"
+    "url": "https://github.com/see/see-desktop/issues"
   },
   "keywords": [
     "electron",
-    "demo",
+    "see",
     "react",
     "redux",
     "typescript",
@@ -147,7 +147,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/upcwangying/electron-demo#readme",
+  "homepage": "https://github.com/see/see-desktop#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
