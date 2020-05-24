@@ -1,7 +1,7 @@
 {
-  "name": "electron-demo",
-  "productName": "electron-demo",
-  "version": "1.0.1",
+  "name": "thebs-electron",
+  "productName": "爱发发",
+  "version": "1.0.0",
   "description": "A demo for Electron",
   "main": "./main.prod.js",
   "author": {

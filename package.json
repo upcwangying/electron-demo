@@ -1,7 +1,7 @@
 {
-  "name": "electron-demo",
-  "productName": "ElectronDemo",
-  "version": "1.0.1",
+  "name": "thebs-electron",
+  "productName": "爱发发",
+  "version": "1.0.0",
   "description": "A demo for Electron",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -52,8 +52,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronDemo",
-    "appId": "com.upcwangying.apps.electron.demo",
+    "productName": "爱发发",
+    "appId": "com.chenyifaer.apps.electron.chenyifaer",
     "copyright": "Copyright © 2020 Ying Wang",
     "files": [
       "dist/",
@@ -74,9 +74,12 @@
         "pkg",
         "zip"
       ],
+      "identity": "",
       "icon": "resources/icon.icns",
-      "provisioningProfile": "build/electron-demo.provisionprofile",
-      "darkModeSupport": true
+      "provisioningProfile": "build/electron-chenyifaer.provisionprofile",
+      "darkModeSupport": true,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.inherit.plist"
     },
     "dmg": {
       "contents": [
@@ -94,8 +97,7 @@
     },
     "mas": {
       "entitlements": "build/entitlements.mas.plist",
-      "entitlementsInherit": "build/entitlements.mas.inherit.plist",
-      "binaries": ["/Users/ying/workspace/ElectronProjects/electron-demo/release/mac/ElectronDemo.app"]
+      "entitlementsInherit": "build/entitlements.mas.inherit.plist"
     },
     "win": {
       "target": [
@@ -118,22 +120,22 @@
     "publish": {
       "provider": "github",
       "owner": "upcwangying",
-      "repo": "electron-demo",
+      "repo": "thebs-electron",
       "private": false
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upcwangying/electron-demo.git"
+    "url": "git+https://github.com/upcwangying/thebs-electron.git"
   },
   "author": {
     "name": "Ying Wang",
     "email": "upcwangying@gmail.com",
-    "url": "https://github.com/upcwangying/electron-demo"
+    "url": "https://github.com/upcwangying/thebs-electron"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/upcwangying/electron-demo/issues"
+    "url": "https://github.com/upcwangying/thebs-electron/issues"
   },
   "keywords": [
     "electron",
@@ -147,7 +149,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/upcwangying/electron-demo#readme",
+  "homepage": "https://github.com/upcwangying/thebs-electron#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {

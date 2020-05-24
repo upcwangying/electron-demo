@@ -53,7 +53,7 @@ export default class MenuBuilder {
       label: 'Electron',
       submenu: [
         {
-          label: 'About ElectronDemo',
+          label: 'About 爱发发',
           // @ts-ignore
           selector: 'orderFrontStandardAboutPanel:'
         },
@@ -61,7 +61,7 @@ export default class MenuBuilder {
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide ElectronDemo',
+          label: 'Hide 爱发发',
           accelerator: 'Command+H',
           selector: 'hide:'
         },
